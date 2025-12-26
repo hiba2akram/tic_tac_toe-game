@@ -1,0 +1,111 @@
+body{
+    background-image: url(images/image2.jpg);
+    background-size:cover;
+        margin: 0px;
+        padding: 0px;
+    
+}
+.jump-in{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+
+.quiz {
+    color: gray;
+    background-color: rgb(227, 218, 218);
+    width: 90%;             /* relative width */
+    max-width: 500px;       /* don’t exceed 500px */
+    height: auto;           /* auto height */
+    padding: 20px;
+    margin: 100px auto;     /* center horizontally */
+    border: 5px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.buttons{
+   display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+       
+}
+
+#btn1, #btn2 , #btn3 , #btn4{
+    width: 100px;
+    border-radius: 10px;
+
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+#button{
+      margin-left: 100px;
+    margin-top: 70px;
+    width: 100px;
+    height: 35px;
+    background-color: gray;
+    border: 30px;
+}
+#id1{
+    /* margin-left: 100px;
+    margin-top: 70px; */
+     background-color: white;
+    color: black;
+       width: 100px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#id1:hover{
+    background-color: rgb(227, 218, 218);
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .quiz {
+        margin: 50px auto;
+        width: 95%;
+    }
+    .para {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .buttons {
+        width: 100%;
+        max-width: 250px;
+    }
+    #btn1, #btn2, #btn3, #btn4 {
+        font-size: 0.9rem;
+    }
+}
